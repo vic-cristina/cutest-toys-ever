@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .star-button {
+    @apply btn-link rounded-xl antialiased w-20;
+  }
+}
