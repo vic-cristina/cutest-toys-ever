@@ -3,34 +3,28 @@ import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Sliders from "./components/Sliders";
+import ProductGrid from "./components/ProductGrid";
+import Cart from "./components/Cart";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div data-theme="mytheme" className="flex flex-col items-center">
-      <Navbar />
-      <div className="flex flex-row w-11/12 p-5 flex-wrap gap-1 max-sm:gap-2">
-        <Sliders />
-        <div className="hero basis-4/6 bg-base-200 rounded-xl">
-          <div className="hero-content flex-col lg:flex-row">
-            <img
-              src="https://placeimg.com/260/400/arch"
-              className="max-w-sm rounded-lg shadow-2xl"
-            />
-            <div>
-              <h1 className="text-5xl font-bold">Box Office News!</h1>
-              <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
-              </p>
-              <button className="btn btn-primary">Get Started</button>
-            </div>
-          </div>
-        </div>
+    <>
+      {" "}
+      <div data-theme="mytheme" className="flex flex-col items-center">
+        <Navbar />
       </div>
-    </div>
+      <div id="main-container" className="flex justify-center flex-wrap">
+        <div
+          id="sliders-container"
+          className="flex flex-col items-start w-96 p-5 flex-wrap gap-1 max-sm:gap-2"
+        >
+          <Sliders />
+          <Sliders />
+        </div>
+        <ProductGrid />
+        <Cart />
+      </div>
+    </>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Sliders = () => {
   return (
-    <div className="card max-sm:w-screen flex-wrap max-sm:h-2/4 max-sm:scale-90  w-96 bg-primary text-primary-content">
+    <div className="card max-sm:w-screen flex-wrap max-sm:h-2/4 max-sm:scale-90  w-72 bg-primary text-primary-content">
       <div className="card-body">
         <div className="card-actions justify-start">
           <label>
